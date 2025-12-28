@@ -8,7 +8,11 @@
     "scheme": "asssyrianbible",
     "userInterfaceStyle": "automatic",
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.ROTech.AssyrianBible",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "web": {
       "bundler": "metro",
@@ -17,11 +21,17 @@
     },
     "plugins": [
       "expo-router",
-      "expo-font", 
+      "expo-font",
       "expo-web-browser"
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "7c4d1bf0-e391-4598-a4ed-dafd61558b7e"
+      }
     }
   }
 }
